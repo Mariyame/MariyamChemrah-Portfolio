@@ -1,0 +1,13 @@
+export { GitHubIcon }  from "@/components/icons/github";
+export { LinkedInIcon } from '@/components/icons/linkedin';
+export { LaravelIcon } from '@/components/icons/laravel';
+export { PhpIcon } from "@/components/icons/php";
+export { EmailIcon } from "@/components/icons/email"
+export { NextjsIcon } from "@/components/icons/nextjs";
+export { ReactIcon } from "@/components/icons/react";
+export { GitIcon } from "@/components/icons/git";
+export { SymfonyIcon } from "@/components/icons/symfony";
+export { TailwindIcon } from "@/components/icons/tailwind";
+export { DockerIcon } from "@/components/icons/docker";
+export { JSIcon } from "@/components/icons/javascript";
+export { TSIcon } from "@/components/icons/typescript";
