@@ -6,6 +6,7 @@ import { Menu, X, ArrowRight } from "lucide-react";
 import { navigation } from "@/data/navigation";
 import { Button } from "../ui/button";
 import { useState, useEffect } from "react";
+import { Container } from "../ui/Container";
 
 export default function Navbar() {
         const hireMeLink = 
@@ -20,6 +21,7 @@ export default function Navbar() {
                 };
             }, [open]);
         return (
+        <Container>
         <div className="flex items-center justify-between py-4">
             <div className="shrink-0">
               <Image
@@ -112,6 +114,6 @@ export default function Navbar() {
                     </ul>
                 </nav>
             </div>
-       
+       </Container>
     )
 }
