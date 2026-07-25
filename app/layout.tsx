@@ -52,7 +52,7 @@ export default function RootLayout({
           antialiased
         `}
     >
-      <body className="h-full flex flex-col">{children}</body>
+      <body> {children}</body>
     </html>
   );
 }
