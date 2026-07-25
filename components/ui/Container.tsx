@@ -2,7 +2,9 @@ import { cn } from "@/lib/utils";
 import { HTMLAttributes } from 'react';
 
 interface ContainerProps
-  extends HTMLAttributes<HTMLDivElement> {}
+  extends HTMLAttributes<HTMLDivElement> {
+    size?: "wide";
+  }
 
 export function Container({
   className,
