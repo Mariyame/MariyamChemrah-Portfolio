@@ -1,19 +1,21 @@
-import Image from "next/image";
+import Navbar from "@/components/layout/Navbar";
 
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-background font-sans">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-background sm:items-start">
-        <Image
-          src="/logo.png"
-          alt="Mariyam Chemrah logo"
-          width={100}
-          height={20}
-          priority
-        />
+    <div className="bg-background text-foreground">
+      <header>
+          <div className="mx-auto h-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+              <Navbar />
+          </div>
+      </header>
 
+      <main className="p-4">
+ 
       </main>
+      <footer>
+        
+      </footer>
     </div>
   );
 }

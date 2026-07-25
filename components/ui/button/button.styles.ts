@@ -6,7 +6,7 @@ export const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-linear-135 from-primary to-accent text-foreground",
+          "bg-linear-135 from-primary to-accent text-foreground hover:from-accent hover:to-primary",
 
         secondary:
           "border border-accent text-foreground hover:bg-accent/10",
@@ -17,12 +17,12 @@ export const buttonVariants = cva(
 
         md: "h-12 px-6",
 
-        lg: "h-14 px-8 text-lg",
+        full: "h-10 px-4 w-full",
       },
     },
     defaultVariants: {
       variant: "primary",
-      size: "md",
+      size: "sm",
     },
   }
 );
