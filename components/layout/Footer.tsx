@@ -5,12 +5,13 @@ import { socialLinks } from "@/data/social-links";
 import { contact } from "@/data/contact";
 import Image from 'next/image';
 import { MapPinned, Phone, Mail} from 'lucide-react';
+import SocialLinks from '../ui/SocialLinks';
 
 export default function Footer() {
     return(
         <footer className="border-t border-border/50">
             <Container className="py-16 *:text-sm ">
-                <div className="grid gap-4 md:grid-cols-4 [&_h2]:text-accent [&_h2]:font-semibold [&_h2]:mb-2">
+                <div className="grid gap-4 md:grid-cols-4 [&_h2]:text-label [&_h2]:font-semibold [&_h2]:mb-2">
                     <div className="shrenk-0 space-y-4 flex flex-col text-center items-center justify-center gap-4 sm:text-start sm:justify-start sm:items-start">
                         <Image
                             src="/logo.png"
@@ -22,16 +23,7 @@ export default function Footer() {
                             <p className='hidden sm:block'>
                                 Full-Stack Developer specializing in Symfony, React, Next.js and more.
                             </p>
-                            <ul className='flex gap-4'>
-                                {socialLinks.map(({ name, href, icon: Icon }) => (
-                                    <Link
-                                        key={name}
-                                        href={href}
-                                    >
-                                        <Icon className="size-4 text-foreground" />
-                                    </Link>
-                                ))}
-                            </ul>
+                             <SocialLinks />
 
                             
                     </div>
@@ -60,19 +52,18 @@ export default function Footer() {
                         
                     </div>
 
-
                     <div className="flex flex-col text-center items-center justify-center gap-4 sm:text-start sm:justify-start sm:items-start">
                         <h2 className='hidden sm:block'>Contact</h2>
                         <div className='flex gap-2'>
-                           <Mail />
+                           <Mail size={16} />
                             <p>{contact.email}</p>
                         </div>
                            <div className='flex gap-2'>
-                           <Phone />
+                           <Phone size={16} />
                             <p>{contact.phone}</p>
                         </div>
                            <div className='flex gap-2'>
-                           <MapPinned />
+                           <MapPinned size={16} />
                             <p>{contact.location}</p>
                         </div>
 
