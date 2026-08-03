@@ -1,6 +1,6 @@
 import { SVGProps } from "react";
 
-export function LaravelIcon(props: SVGProps<SVGSVGElement>) {
+export const LaravelIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       viewBox="-4 0 264 264"

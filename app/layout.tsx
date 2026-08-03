@@ -49,13 +49,14 @@ export default function RootLayout({
     <html
       lang="en"
       className={`
+          overflow-x-hidden
           ${spaceGrotesk.variable}
           ${inter.variable}          
         `}
     >
-      <body className="min-h-screen flex flex-col antialiased bg-background text-foreground">
+      <body className="overflow-x-hidden w-full box-border min-h-screen flex flex-col antialiased bg-background text-foreground tracking-tight">
           <header>
-                <Navbar />
+            <Navbar />
         </header>
 
         <main className="flex-1">

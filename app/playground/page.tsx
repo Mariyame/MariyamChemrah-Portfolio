@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { TechBadge } from "@/components/ui/TechBadge";
 
 import { 
   ArrowRight,
@@ -31,7 +32,7 @@ import {
 export default function PlaygroundPage() {
   return (
     <main className="bg-background mx-auto max-w-3xl space-y-16 px-2 py-16">
-      <h1 className="font-heading text-5xl text-foreground">
+      <h1 className="font-heading text-5xl text-foreground text-shadow:_0_0_10px_#ec4899,_0_0_20px_#ec4899,_0_0_40px_#ec4899">
         Design System
       </h1>
       <Menu className="text-foreground"/>
@@ -39,7 +40,7 @@ export default function PlaygroundPage() {
       {/* Buttons */}
 
       <section className="space-y-2">
-        <h2 className="text-3xl font-semibold">
+        <h2 className="text-3xl font-semibold text-shadow:_0_0_10px_#ec4899,_0_0_20px_#ec4899,_0_0_40px_#ec4899">
           Buttons
         </h2>
 
@@ -90,11 +91,19 @@ export default function PlaygroundPage() {
   </div>
 </div>
 
-<button className="border border-pink-500/50 transition-all duration-300 hover:border-pink-500 hover:shadow-[0_0_5px_rgba(236,72,153,0.7)] bg-black text-white px-6 py-3 rounded-lg">
-  Hover Me
-</button>
 
+    <TechBadge
+      icon={GitHubIcon}
+      label="GitHub"
+      iconClassName="text-blue-500"
+    />
 
+    <TechBadge
+      icon={GitHubIcon}
+      label="GitHub"
+      labelPosition="bottom"
+      iconClassName="text-emerald-400"
+    />
 
     </main>
   );
