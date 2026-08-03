@@ -55,7 +55,7 @@ export default function Navbar() {
                 {/* Drawer */}
                 <aside id="mobile-menu"
                     className={clsx(
-                        "fixed px-4 top-0 right-0 h-screen w-80 bg-background transition-transform duration-300 ease-in-out",
+                        "fixed px-4 top-0 right-0 h-screen w-80 z-50 bg-background transition-transform duration-300 ease-in-out",
                         open ? "translate-x-0" : "translate-x-full"
                     )}
                 >
@@ -99,7 +99,7 @@ export default function Navbar() {
                             <Link 
                                 href={item.href}
                                 aria-current={item.current ? 'page' : undefined}
-                                className={clsx(item.current && "border-b border-accent", "pb-2 hover:border-b border-accent")}
+                                className={clsx(item.current && "border-b border-label", "pb-2 hover:border-b border-label")}
                                 >
                                     {item.name}
                             </Link>

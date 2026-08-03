@@ -17,6 +17,8 @@ export const buttonVariants = cva(
 
         md: "h-12 px-6",
 
+        lg: "h-10 px-8",
+
         full: "h-10 px-4 w-full",
       },
     },
