@@ -119,7 +119,7 @@ export const floatTechStack: Technology[] = [
   "react",
   "git",
   "tailwind",
-  "javascript",
+  // "javascript",
 ].flatMap((id) => {
   const technology = technologies.find((item) => item.id === id);
 
