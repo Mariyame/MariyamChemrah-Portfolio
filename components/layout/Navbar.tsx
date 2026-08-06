@@ -6,7 +6,7 @@ import { Menu, X, ArrowRight } from "lucide-react";
 import { navigation } from "@/data/navigation";
 import { Button } from "../ui/button";
 import { useState, useEffect } from "react";
-import { Container } from "../ui/Container";
+import  Container  from "@/components/ui/Container";
 
 export default function Navbar() {
         const hireMeLink = 

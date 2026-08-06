@@ -1,4 +1,4 @@
-import { Container} from "@/components/ui/Container";
+import  Container from "@/components/ui/Container";
 import { Button } from "../ui/button";
 import { ArrowRight, Download } from "lucide-react";
 import SocialLinks from "../ui/SocialLinks";
@@ -13,7 +13,8 @@ export default function Hero() {
             const hireMeLink = "mailto:mariam.chemrah@gmail.com?subject=Senior Full Stack Developer Opportunity";
     return (
         <section id="hero">
-            <Container className="flex min-h-[calc(100vh-15rem)] flex-col items-center justify-between gap-16 lg:flex-row">
+            <Container>
+                <div className="flex min-h-[calc(100vh-15rem)] flex-col items-center justify-between gap-16 lg:flex-row">
                 <div className="flex max-w-2xl  flex-1 flex-col">
                     <span className="relative block w-60 mb-8 rounded-full border border-border py-2 text-center text-xs before:absolute before:left-2 before:top-1/3 before:-translate-y-1/2 before:text-label before:text-5xl before:content-['•'] before:blur-xs before:animate-pulse">
                     Backend to frontend, I build it all.
@@ -30,7 +31,7 @@ export default function Hero() {
                     <p className="mt-4"> 
                         I build robust, scalable, and high-performance web applications using modern technologies and clean architecture.
                     </p>
-                    <div className="flex gap-4 mt-4">
+                    <div className="flex sm:flex-row flex-col gap-4 mt-4">
                         <Button className="gap-2" size="lg">
                             <Link href={hireMeLink}>Hire me</Link>
                             <ArrowRight className="size-4"/>
@@ -41,7 +42,6 @@ export default function Hero() {
                              </Link>
                              <Download  className="size-4"/>
                         </Button>
-
                     </div>
                     <div className="flex items-center gap-4 mt-4">
                     <p className="text-sm font-medium">
@@ -49,12 +49,12 @@ export default function Hero() {
                     </p>
                     <SocialLinks />
                     </div>
-        
                 </div>
                 <HeroImage />
+                </div>
             </Container>
-            <Container className="hidden sm:flex">
-            <Card>
+            <Container >
+            <Card className="hidden sm:flex">
                 <TechStack technologies={heroTechStack} showLabels={true} labelPosition="bottom" />
             </Card>
             </Container>
