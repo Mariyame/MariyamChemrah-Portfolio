@@ -9,7 +9,7 @@ export const buttonVariants = cva(
           "bg-linear-135 from-primary to-accent text-foreground hover:from-accent hover:to-primary",
 
         secondary:
-          "border border-accent text-foreground hover:bg-accent/10",
+          "inset-ring inset-ring-accent/30  text-foreground hover:inset-ring-accent/50 gap-2 transition-all duration-300  hover:shadow-[0_0_8px_#ec4899]",
 
       },
       size: {

@@ -6,7 +6,7 @@ export const cardVariants = cva(
     variants: {
         variant: {
             default:
-                "bg-surface border border-border p-8",
+                "bg-surface border border-border p-6",
 
             glass:
                 "backdrop-blur-xl bg-white/5 border border-white/10",
