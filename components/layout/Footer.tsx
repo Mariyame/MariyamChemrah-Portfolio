@@ -1,16 +1,16 @@
 import  Link  from 'next/link';
-import { Container } from "@/components/ui/Container";
+import Container  from "@/components/ui/Container";
 import { navigation } from '@/data/navigation';
 import { socialLinks } from "@/data/social-links";
 import { contact } from "@/data/contact";
 import Image from 'next/image';
 import { MapPinned, Phone, Mail} from 'lucide-react';
-import SocialLinks from '../ui/SocialLinks';
+import SocialLinks from '@/components/ui/SocialLinks';
 
 export default function Footer() {
     return(
-        <footer className="border-t border-border/50">
-            <Container className="py-16 *:text-sm ">
+        <footer className="border-t border-border/50 py-16 *:text-sm ">
+            <Container>
                 <div className="grid gap-4 md:grid-cols-4 [&_h2]:text-label [&_h2]:font-semibold [&_h2]:mb-2">
                     <div className="shrenk-0 space-y-4 flex flex-col text-center items-center justify-center gap-4 sm:text-start sm:justify-start sm:items-start">
                         <Image
