@@ -1,22 +1,55 @@
-const stats = [
-  { id: 1, name: 'Transactions every 24 hours', value: '44 million' },
-  { id: 2, name: 'Assets under holding', value: '$119 trillion' },
-  { id: 3, name: 'New users annually', value: '46,000' },
-]
+import {
+  FolderKanban,
+  CalendarDays,
+  Code2,
+  BadgeCheck,
+} from "lucide-react";
 
-export default function Example() {
+const stats = [
+  {
+    id: 1,
+    icon: FolderKanban,
+    name: "Projects Completed",
+    value: "30+",
+  },
+  {
+    id: 2,
+    icon: CalendarDays,
+    name: "Years of Experience",
+    value: "8+",
+  },
+  {
+    id: 3,
+    icon: Code2,
+    name: "Technologies",
+    value: "20+",
+  },
+  {
+    id: 4,
+    icon: BadgeCheck,
+    name: "Commitment",
+    value: "100%",
+  },
+];
+
+export default function Statistics() {
   return (
-    <div className="bg-gray-900 py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-          {stats.map((stat) => (
-            <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
-              <dt className="text-base/7 text-gray-400">{stat.name}</dt>
-              <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">{stat.value}</dd>
-            </div>
-          ))}
-        </dl>
+   <dl className="grid grid-cols-2 md:grid-cols-4 lg:gap-y-0 gap-y-4 gap-1">
+  {stats.map((stat) => (
+    <div key={stat.id} className="flex items-center gap-4 lg:border-r lg:border-white/10 lg:px-8 first:lg:pl-0 last:lg:border-r-0 last:lg:pr-0">
+      <div className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-accent/10">
+        <stat.icon className="size-6 text-accent" aria-hidden="true"/>
+      </div>
+      <div>
+        <dt className="mt-1 text-3xl font-semibold tracking-tight">
+          {stat.value}
+        </dt>
+        <dd className="text-sm text-muted-foreground">
+          {stat.name}
+        </dd>
       </div>
     </div>
+  ))}
+ </dl>
   )
 }

@@ -35,7 +35,7 @@ export default function Hero() {
                             <Link href={hireMeLink}>Hire me</Link>
                             <ArrowRight className="size-4"/>
                         </Button>
-                        <Button variant="secondary" className="gap-2 transition-all duration-300  hover:shadow-[0_0_8px_#ec4899]">
+                        <Button variant="secondary">
                              <Link href="/EN_Resume_MariyamChemrah.pdf">
                              Download CV
                              </Link>
