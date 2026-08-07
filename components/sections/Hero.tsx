@@ -1,12 +1,12 @@
 import  Container from "@/components/ui/Container";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
-import SocialLinks from "../ui/SocialLinks";
+import SocialLinks from "@/components/ui/SocialLinks";
 import Link from "next/link";
-import { HeroImage } from "../ui/hero/HeroImage";
-import  TechStack  from "../ui/hero/TechStack";
+import { HeroImage } from "@/components/ui/hero/HeroImage";
+import  TechStack  from "@/components/ui/hero/TechStack";
 import { heroTechStack } from "@/data/technologies";
-import { Card } from "../ui/card";
+import { Card } from "@/components/ui/card";
 
 
 export default function Hero() {
@@ -19,10 +19,10 @@ export default function Hero() {
                     <span className="relative block w-60 mb-8 rounded-full border border-border py-2 text-center text-xs before:absolute before:left-2 before:top-1/3 before:-translate-y-1/2 before:text-label before:text-5xl before:content-['•'] before:blur-xs before:animate-pulse">
                     Backend to frontend, I build it all.
                     </span>                
-                    <p className="text-lg text-muted-foreground">
+                    <p className="text-2xl text-muted-foreground font-medium font-2xl">
                     Hi, I&apos;m
                     </p>
-                    <h1 className="text-6xl font-heading font-extrabold tracking-widest bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
+                    <h1 className="text-6xl font-heading font-extrabold tracking-normal sm:tracking-widest bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">
                         Mariyam Chemrah
                     </h1>
                     <p className="text-2xl font-medium text-muted-foreground">
@@ -54,7 +54,7 @@ export default function Hero() {
                 </div>
             </Container>
             <Container >
-            <Card className="hidden sm:flex">
+            <Card className="hidden sm:block">
                 <TechStack technologies={heroTechStack} showLabels={true} labelPosition="bottom" />
             </Card>
             </Container>

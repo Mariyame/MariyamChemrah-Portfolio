@@ -26,7 +26,7 @@ export function HeroImage() {
         width={550}
         height={550}
         priority
-        className="relative z-20 rounded-full shadow-xs shadow-inset shadow-background/50"
+        className="relative z-20 rounded-full shadow-xs shadow-inset shadow-background/5"
       />
     </div>
   );

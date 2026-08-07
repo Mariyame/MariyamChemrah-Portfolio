@@ -13,14 +13,14 @@ type TechStackProps = {
 };
 
 const floatingPositions: Record<string, string> = {
-  php: "top-6 left-10 -translate-x-1/2",
-  laravel: "top-6 right-10",
-  ts: "top-20 right-25 -translate-x-1/2",
+  php: "top-10 left-10 sm:left-16 -translate-x-1/2",
+  laravel: "top-6 right-18",
+  ts: "top-15 sm:top-35 right-0 -translate-x-1/2",
   nextjs: "right-0 top-1/2 -translate-y-1/2",
-  symfony: "bottom-6 right-10",
-  react: "top-35 left-20 -translate-x-1/2",
+  symfony: "bottom-12 right-0 sm:right-10",
+  react: "top-25 sm:top-45 left-5 -translate-x-1/2",
   git: "bottom-6 left-10",
-  tailwind: "left-0 top-2/3",
+  tailwind: "left-0 top-45 sm:top-2/3",
   // javascript: "top-6 left-10 -translate-x-1/2",
   docker: "top-6 left-10 -translate-x-1/2",
 };
