@@ -12,7 +12,7 @@ export default function Footer() {
         <footer className="border-t border-border/50 py-16 *:text-sm ">
             <Container>
                 <div className="grid gap-4 md:grid-cols-4 [&_h2]:text-label [&_h2]:font-semibold [&_h2]:mb-2">
-                    <div className="shrenk-0 space-y-4 flex flex-col text-center items-center justify-center gap-4 sm:text-start sm:justify-start sm:items-start">
+                    <div className="shrenk-0 flex items-center content-center justify-between gap-4">
                         <Image
                             src="/logo.png"
                             alt="Mariyam Chemrah logo"
@@ -20,12 +20,10 @@ export default function Footer() {
                             height={10}
                             priority
                             />
-                            <p className='hidden sm:block'>
-                                Full-Stack Developer specializing in Symfony, React, Next.js and more.
-                            </p>
-                             <SocialLinks />
-
-                            
+                        <p className='hidden sm:block'>
+                            Full-Stack Developer specializing in Symfony, React, Next.js and more.
+                        </p>
+                        <SocialLinks /> 
                     </div>
                     <div className="md:flex flex-col gap-2 hidden">   
                          <h2>Quick Links</h2>          
@@ -52,13 +50,13 @@ export default function Footer() {
                         
                     </div>
 
-                    <div className="flex flex-col text-center items-center justify-center gap-4 sm:text-start sm:justify-start sm:items-start">
+                    <div className="flex flex-col text-center items-center justify-center gap-2 sm:gap-4 sm:text-start sm:justify-start sm:items-start">
                         <h2 className='hidden sm:block'>Contact</h2>
                         <div className='flex gap-2'>
                            <Mail size={16} />
                             <p>{contact.email}</p>
                         </div>
-                           <div className='flex gap-2'>
+                           <div className='hidden sm:flex gap-2'>
                            <Phone size={16} />
                             <p>{contact.phone}</p>
                         </div>

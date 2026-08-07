@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-
+body {
+  @apply text-sm md:text-base;
+}
 @theme {
   /* Fonts */
   --font-heading: var(--font-space-grotesk);

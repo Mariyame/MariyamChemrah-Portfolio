@@ -40,14 +40,14 @@ export default function Statistics() {
       {stats.map((stat) => (
         <Card key={stat.id} className="md:contents">
         <div  className="flex items-center gap-4 lg:border-r lg:border-white/10 lg:px-8 first:lg:pl-0 last:lg:border-r-0 last:lg:pr-0">
-          <div className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-accent/10">
-            <stat.icon className="size-6 text-accent" aria-hidden="true"/>
+          <div className="flex size-10 sm:size-12 shrink-0 items-center justify-center rounded-lg bg-label/10">
+            <stat.icon className="size-4 sm:size-6 text-label" aria-hidden="true"/>
           </div>
           <div>
-            <dt className="mt-1 text-3xl font-semibold tracking-tight">
+            <dt className="mt-1 text-2xl sm:text-3xl font-semibold tracking-tight">
               {stat.value}
             </dt>
-            <dd className="text-sm text-muted-foreground">
+            <dd className="text-xs sm:text-sm text-muted-foreground">
               {stat.name}
             </dd>
           </div>
