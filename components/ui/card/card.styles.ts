@@ -1,12 +1,12 @@
 import { cva } from "class-variance-authority";
 
 export const cardVariants = cva(
-  "w-full overflow-x-auto rounded-3xl transition-all duration-300",
+  "w-full overflow-x-auto rounded-xl sm:rounded-3xl transition-all duration-300",
   {
     variants: {
         variant: {
             default:
-                "bg-surface border border-border p-4 md:p-6",
+                "bg-surface border border-border p-3 sm:p-4 md:p-6",
 
             glass:
                 "backdrop-blur-xl bg-white/5 border border-white/10",

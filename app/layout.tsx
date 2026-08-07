@@ -4,8 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
-
-
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   subsets: ["latin"],
@@ -15,8 +13,6 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
-
-
 
 export const metadata: Metadata = {
   title: "Maryiam Chemrah | Full-Stack Software Engineer (PHP, Symfony, Laravel, React, Next.js)",
