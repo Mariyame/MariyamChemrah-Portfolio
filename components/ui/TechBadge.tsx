@@ -31,7 +31,7 @@ export function TechBadge({
   return (
     <Component
       className={cn(
-        "inline-flex w-fit shrink-0 items-center justify-center size-8 p-4 border-white/10 border-r last:border-r-0",
+        "inline-flex w-fit shrink-0 items-center justify-start sm:justify-center size-8 p-4 border-white/10 border-r last:border-r-0",
         isBottom ? "flex-col gap-1" : "flex-row gap-2",
         className
       )}
