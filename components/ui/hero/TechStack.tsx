@@ -5,7 +5,7 @@ import type { Technology } from "@/data/technologies";
 
 type TechStackProps = {
   technologies: Technology[];
-  variant?: "default" | "floating";
+  variant?: "default" | "floating" | "accordion";
   className?: string;
   badgeClassName?: string;
   showLabels?: boolean;
@@ -81,6 +81,29 @@ export default function TechStack({
         })}
       </div>
     );
+  }else if(variant === "accordion") {
+      return (
+          <div className={cn("flex flex-col sm:flex-row gap-1 justify-start sm:justify-center py-4 sm:py-6", className)}>
+            {technologies.map((technology) => {
+
+              const Icon = technology.icon;
+
+              return (
+                <TechBadge
+                  key={technology.id}
+                  icon={Icon}
+                  label={showLabels ? technology.name : undefined}
+                  iconClassName={getIconClassName(technology)}
+                  className="w-auto bg-surface border border-border py-6 sm:py-10 rounded-sm sm:rounded-xl"
+                  labelClassName="text-sm text-white/70"
+                  labelPosition={ labelPosition }
+                />
+                
+              );
+            })}
+          </div>
+          
+          );
   }
 
   return (

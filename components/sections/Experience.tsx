@@ -47,7 +47,7 @@ export default function Experience() {
                         </div>
                     </div>
                  ))}
-                <Button variant="secondary" size="full">
+                <Button variant="secondary" size="full" className="flex sm:hidden">
                         <Link href="/EN_Resume_MariyamChemrah.pdf">
                         View Full Experience
                         </Link>

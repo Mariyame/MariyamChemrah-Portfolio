@@ -9,10 +9,9 @@ import { useState, useEffect } from "react";
 import  Container  from "@/components/ui/Container";
 
 export default function Navbar() {
-        const hireMeLink = 
-        "mailto:mariam.chemrah@gmail.com?subject=Senior Full Stack Developer Opportunity";
-        const [open, setOpen] = 
-        useState(false);
+        const hireMeLink = "mailto:mariam.chemrah@gmail.com?subject=Senior Full Stack Developer Opportunity";
+        const [open, setOpen] = useState(false);
+
         useEffect(() => {
                 document.body.style.overflow = open ? "hidden" : "";
 
@@ -20,6 +19,7 @@ export default function Navbar() {
                     document.body.style.overflow = "";
                 };
             }, [open]);
+            
         return (
         <Container>
         <div className="flex items-center justify-between py-4">
