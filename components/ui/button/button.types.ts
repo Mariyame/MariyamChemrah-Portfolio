@@ -3,6 +3,7 @@ import { ButtonHTMLAttributes } from "react";
 export type ButtonVariant =
   | "primary"
   | "secondary"
+  | "transparent"
 
 export type ButtonSize =
   | "sm"

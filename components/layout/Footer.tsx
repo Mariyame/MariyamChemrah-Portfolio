@@ -11,7 +11,7 @@ export default function Footer() {
     return(
         <footer className="border-t border-border/50 py-16 *:text-sm">
             <Container>
-                <div className="grid md:grid-cols-[1fr_1fr_1fr] [&_h2]:text-label [&_h2]:font-semibold [&_h2]:mb-2 *:border-white/10 *:border-r *:last:border-r-0 *:py-2">
+                <div className="grid md:grid-cols-[1fr_1fr_1fr] [&_h2]:text-label [&_h2]:font-semibold [&_h2]:mb-2 *:border-white/10 *:sm:border-r *:last:border-r-0 *:border-0 *:py-2">
                     <div className="flex sm:flex-col items-center sm:items-start content-center justify-between sm:justify-start gap-4 shrenk-0 ">
                         <Image
                             src="/logo.png"

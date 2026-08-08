@@ -94,7 +94,7 @@ export default function TechStack({
                   icon={Icon}
                   label={showLabels ? technology.name : undefined}
                   iconClassName={getIconClassName(technology)}
-                  className="w-auto bg-surface border border-border py-6 sm:py-10 rounded-sm sm:rounded-xl"
+                  className="w-auto bg-surface border border-border py-6 sm:py-10 text-start justify-start rounded-sm  sm:rounded-xl"
                   labelClassName="text-sm text-white/70"
                   labelPosition={ labelPosition }
                 />
