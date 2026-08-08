@@ -10,7 +10,9 @@ export const buttonVariants = cva(
 
         secondary:
           "inset-ring inset-ring-label/30  text-foreground hover:inset-ring-label/50 gap-2 transition-all duration-300  hover:shadow-[0_0_8px_#C084FC]",
-
+        
+        transparent:
+        "border-0"  
       },
       size: {
         sm: "h-10 px-4 text-sm",
