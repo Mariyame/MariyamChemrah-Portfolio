@@ -22,8 +22,14 @@ import {
    PhpIcon,
    GitIcon,
    TailwindIcon,
-   DockerIcon
+   DockerIcon,
+   PythonIcon,
+   MongoDBIcon,
+   RedisIcon
    } from "@/components/icons";
+
+
+
 
 
 
@@ -78,6 +84,9 @@ export default function PlaygroundPage() {
         <DockerIcon className="text-[#2396ED]" size-6/>
         <JSIcon className="bg-[#F7DF1E] size-6"/>
         <TSIcon className="bg-[#3178c6] text-white size-6"/>
+        <PythonIcon className="bg-[#1565A7] text-white size-6"/>
+        <MongoDBIcon className="bg-[#13aa52] text-white size-6"/>
+        <RedisIcon className="bg-[#C6302B] text-white size-6"/>
 
       </section>
 

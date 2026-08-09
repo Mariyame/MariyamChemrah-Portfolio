@@ -10,7 +10,17 @@ import {
   GitIcon,
   TailwindIcon,
   DockerIcon,
+  PythonIcon,
+  MongoDBIcon,
+  RedisIcon,
+  PHPUnitIcon,
+  HTMLIcon,
+  SQLIcon,
+  WordPressIcon,
+  MySQLIcon
 } from "@/components/icons";
+
+
 
 export type Technology = {
   id: string;
@@ -74,7 +84,7 @@ export const technologies: Technology[] = [
     id: "git",
     name: "Git",
     icon: GitIcon,
-    category: "tools",
+    category: "others",
     color: "#EE513B",
   },
   {
@@ -88,8 +98,65 @@ export const technologies: Technology[] = [
     id: "docker",
     name: "Docker",
     icon: DockerIcon,
-    category: "tools",
+    category: "others",
     color: "#2396ED",
+  },
+  {
+    id: "python",
+    name: "Python",
+    icon: PythonIcon,
+    category: "backend",
+    color: "#1565A7",
+    // #F9C600
+  },
+  {
+    id: "mongodb",
+    name: "MongoDB",
+    icon: MongoDBIcon,
+    category: "others",
+    color: "#13aa52",
+  },
+  {
+    id: "redis",
+    name: "Redis",
+    icon: RedisIcon,
+    category: "others",
+    color: "#C6302B",
+  },
+  {
+    id: "phpunit",
+    name: "PHPUnit",
+    icon: PHPUnitIcon,
+    category: "others",
+    color: "#838fff",
+  },
+  {
+    id: "html",
+    name: "HTML",
+    icon: HTMLIcon,
+    category: "frontend",
+    color: "#E44D26",
+  },
+  {
+    id: "sql",
+    name: "SQL",
+    icon: SQLIcon,
+    category: "others",
+    color: "#E44D26",
+  },
+  {
+    id: "wordpress",
+    name: "Wordpress",
+    icon: WordPressIcon,
+    category: "others",
+    color: "#21759B",
+  },
+  {
+    id: "mysql",
+    name: "MySQL",
+    icon: MySQLIcon,
+    category: "others",
+    color: "#5d87a1",
   },
 ];
 
