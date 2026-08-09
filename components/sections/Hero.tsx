@@ -14,7 +14,7 @@ export default function Hero() {
     return (
         <section id="hero">
             <Container>
-                <div className="flex min-h-[calc(100vh-15rem)] flex-col items-center justify-between gap-16 lg:flex-row">
+            <div className="flex min-h-[calc(100vh-15rem)] flex-col items-center justify-between gap-16 lg:flex-row">
                 <div className="flex max-w-2xl  flex-1 flex-col">
                     <span className="relative block w-60 mb-8 rounded-full border border-border py-2 text-center text-xs before:absolute before:left-2 before:top-1/3 before:-translate-y-1/2 before:text-label before:text-5xl before:content-['•'] before:blur-xs before:animate-pulse">
                     Backend to frontend, I build it all.
@@ -51,9 +51,7 @@ export default function Hero() {
                     </div>
                 </div>
                 <HeroImage />
-                </div>
-            </Container>
-            <Container >
+            </div>
             <Card className="hidden sm:block">
                 <TechStack technologies={heroTechStack} showLabels={true} labelPosition="bottom" />
             </Card>

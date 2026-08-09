@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export default function Projects() {
     return (
-        <section id="projects" className="py-y sm:py-12">
+        <section id="projects" className="py-6 sm:py-12">
             <Container>
                 <Heading title="Featured projects" subtitle="Some things I've built" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-6">
