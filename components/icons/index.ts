@@ -19,3 +19,5 @@ export { HTMLIcon } from "@/components/icons/html";
 export { SQLIcon } from "@/components/icons/sql";
 export { WordPressIcon } from "@/components/icons/wordpress";
 export { MySQLIcon } from "@/components/icons/mysql";
+export { CodeQLIcon } from "@/components/icons/codeql";
+export { LinuxIcon } from "@/components/icons/linux";

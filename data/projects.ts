@@ -19,12 +19,12 @@ export const projects = [
     category: "Professional",
     type: "Marketplace",
     image: "/images/mywall.png",
-    liveUrl: "https://mariyam-chemrah-portfolio.vercel.app/",
+    liveUrl: null,
     githubUrl: null,
     description:
       "A marketplace platform developed with Laravel, including backend architecture and business functionality.",
     technologies: [
-      "Paybal",
+      "PayPal",
       "Laravel",
       "MySQL",
       "JavaScript",
@@ -37,7 +37,7 @@ export const projects = [
     category: "Personal",
     type: "Marketplace",
     image: "/images/tascaart.png",
-    liveUrl: "https://mariyam-chemrah-portfolio.vercel.app/",
+    liveUrl: null,
     githubUrl: null,
     description:
       "An online marketplace concept focused on Berber rugs and traditional handmade products.",
@@ -50,14 +50,14 @@ export const projects = [
 
   {
     id: 3,
-    title: "JoyTask",
+    title: "TaskJoy",
     category: "Personal",
     type: "Task Management",
-    image: "/images/joytask.png",
+    image: "/images/taskjoy.png",
     liveUrl: null,
     githubUrl: null,
     description:
-      "A modern task-management application designed to demonstrate full-stack application architecture.",
+      "A full-stack task management SaaS built with Next.js, TypeScript and Symfony, featuring authentication, project management, task workflows and a REST API.",
     technologies: [
       "ReactNative",
       "Next.js",
