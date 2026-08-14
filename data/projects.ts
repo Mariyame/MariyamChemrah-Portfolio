@@ -59,7 +59,7 @@ export const projects = [
     description:
       "A full-stack task management SaaS built with Next.js, TypeScript and Symfony, featuring authentication, project management, task workflows and a REST API.",
     technologies: [
-      "ReactNative",
+      "React",
       "Next.js",
       "Tailwind CSS",
       "Symfony",
