@@ -47,9 +47,7 @@ export default function Projects() {
                                          <span>View Project</span> 
                                          <ArrowRight />
                                     </Link>
-
                                 )}
-                              
                             </Button>
                            </div>
                         </div>

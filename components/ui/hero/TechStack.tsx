@@ -83,7 +83,7 @@ export default function TechStack({
     );
   }else if(variant === "accordion") {
       return (
-          <div className={cn("flex flex-col sm:flex-row gap-1 justify-start sm:justify-center py-4 sm:py-6", className)}>
+          <div className={cn("flex flex-col sm:flex-row gap-1 justify-start sm:justify-center-safe py-4 sm:py-6", className)}>
             {technologies.map((technology) => {
 
               const Icon = technology.icon;
@@ -107,7 +107,7 @@ export default function TechStack({
   }
 
   return (
-    <div className={cn("flex gap-4 justify-around", className)}>
+    <div className={cn("flex justify-around", className)}>
       {technologies.map((technology) => {
 
         const Icon = technology.icon;
@@ -118,7 +118,7 @@ export default function TechStack({
             icon={Icon}
             label={showLabels ? technology.name : undefined}
             iconClassName={getIconClassName(technology)}
-            className="w-auto"
+            className="w-28"
             labelClassName="text-sm text-white/70"
             labelPosition={ labelPosition }
           />

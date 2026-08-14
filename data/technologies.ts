@@ -17,7 +17,9 @@ import {
   HTMLIcon,
   SQLIcon,
   WordPressIcon,
-  MySQLIcon
+  MySQLIcon,
+  CodeQLIcon,
+  LinuxIcon
 } from "@/components/icons";
 
 
@@ -157,6 +159,20 @@ export const technologies: Technology[] = [
     icon: MySQLIcon,
     category: "others",
     color: "#5d87a1",
+  },
+  {
+    id: "codeql",
+    name: "CodeQL",
+    icon: CodeQLIcon,
+    category: "others",
+    color: "#2088ff",
+  },
+  {
+    id: "linux",
+    name: "Linux",
+    icon: LinuxIcon,
+    category: "others",
+    color: "#E68C3F",
   },
 ];
 
