@@ -50,18 +50,18 @@ export const projects = [
 
   {
     id: 3,
-    title: "TaskJoy",
+    title: "Rivulet",
     category: "Personal",
     type: "Task Management",
-    image: "/images/taskjoy.png",
-    liveUrl: null,
-    githubUrl: null,
+    image: "/images/rivulet.png",
+    liveUrl: "https://rivulet-three.vercel.app",
+    githubUrl: "https://github.com/Mariyame/rivulet",
     description:
       "A full-stack task management SaaS built with Next.js, TypeScript and Symfony, featuring authentication, project management, task workflows and a REST API.",
     technologies: [
       "React",
       "Next.js",
-      "Tailwind CSS",
+      "React Native",
       "Symfony",
     ],
   },
