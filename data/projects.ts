@@ -50,10 +50,10 @@ export const projects = [
 
   {
     id: 3,
-    title: "TaskJoy",
+    title: "Rivulet",
     category: "Personal",
     type: "Task Management",
-    image: "/images/taskjoy.png",
+    image: "/images/rivulet.png",
     liveUrl: null,
     githubUrl: null,
     description:
@@ -61,7 +61,7 @@ export const projects = [
     technologies: [
       "React",
       "Next.js",
-      "Tailwind CSS",
+      "React Native",
       "Symfony",
     ],
   },
