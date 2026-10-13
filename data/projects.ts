@@ -54,8 +54,8 @@ export const projects = [
     category: "Personal",
     type: "Task Management",
     image: "/images/rivulet.png",
-    liveUrl: null,
-    githubUrl: null,
+    liveUrl: "https://rivulet-three.vercel.app",
+    githubUrl: "https://github.com/Mariyame/rivulet",
     description:
       "A full-stack task management SaaS built with Next.js, TypeScript and Symfony, featuring authentication, project management, task workflows and a REST API.",
     technologies: [
